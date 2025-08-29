@@ -152,12 +152,12 @@ Edit `server/.env` with your configuration:
 
 ```env
 # Database Configuration
-DATABASE_URL=postgresql://postgres:8711@localhost:5432/plivo-assignment
-DB_HOST=localhost
-DB_PORT=5432
+DATABASE_URL=******
+DB_HOST=******
+DB_PORT=****
 DB_NAME=plivo-assignment
 DB_USER=postgres
-DB_PASSWORD=8711
+DB_PASSWORD=****
 
 # JWT Configuration
 JWT_SECRET=your-super-secret-jwt-key-plivo-assignment-2024

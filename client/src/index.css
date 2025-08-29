@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  body {
+    @apply bg-gray-50 text-gray-900 font-sans;
+  }
+}
+
+@layer components {
+  /* Status indicators */
+  .status-operational {
+    @apply bg-green-500 text-white;
+  }
+  
+  .status-degraded {
+    @apply bg-yellow-500 text-white;
+  }
+  
+  .status-partial {
+    @apply bg-orange-500 text-white;
+  }
+  
+  .status-major {
+    @apply bg-red-500 text-white;
+  }
+  
+  .status-maintenance {
+    @apply bg-blue-500 text-white;
+  }
+
+  /* Status dots */
+  .status-dot-operational {
+    @apply bg-green-500;
+  }
+  
+  .status-dot-degraded {
+    @apply bg-yellow-500;
+  }
+  
+  .status-dot-partial {
+    @apply bg-orange-500;
+  }
+  
+  .status-dot-major {
+    @apply bg-red-500;
+  }
+  
+  .status-dot-maintenance {
+    @apply bg-blue-500;
+  }
+
+  /* Button variants */
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-lg transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 hover:bg-gray-200 text-gray-900 font-medium px-4 py-2 rounded-lg transition-colors;
+  }
+  
+  .btn-danger {
+    @apply bg-red-600 hover:bg-red-700 text-white font-medium px-4 py-2 rounded-lg transition-colors;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 p-6;
+  }
+  
+  .card-header {
+    @apply flex items-center justify-between mb-4;
+  }
+
+  /* Form styles */
+  .form-input {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+  
+  .form-error {
+    @apply text-red-600 text-sm mt-1;
+  }
+
+  /* Loading states */
+  .loading-spinner {
+    @apply animate-spin rounded-full border-2 border-gray-200 border-t-blue-600;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Focus styles for accessibility */
+.focus\:ring-custom:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}

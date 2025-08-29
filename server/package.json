@@ -1,0 +1,34 @@
+{
+  "name": "status-page-server",
+  "version": "1.0.0",
+  "description": "Backend server for status page application",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "create-db": "node src/database/create-db.js",
+    "migrate": "node src/database/migrate.js",
+    "seed": "node src/database/seed.js",
+    "db:migrate": "node src/database/migrate.js",
+    "db:seed": "node src/database/seed.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.1",
+    "socket.io": "^4.7.5",
+    "joi": "^17.12.2",
+    "dotenv": "^16.4.5",
+    "express-rate-limit": "^7.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
